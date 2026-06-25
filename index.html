@@ -40,6 +40,12 @@ h2{font-size:21px;color:var(--navy);font-weight:normal;margin:0 0 18px;padding-l
 .links a{flex:1;min-width:220px;text-align:center;text-decoration:none;background:var(--navy);color:var(--ivory);padding:16px;border-radius:8px;font-size:15px}
 .links a.gold{background:var(--gold);color:var(--navy)}
 .note{font-size:14px;color:#6a6a6a}
+.latest{list-style:none;margin:18px 0 8px;padding:0}
+.latest li{border-bottom:1px solid #e2d9c4}
+.latest li:first-child{border-top:1px solid #e2d9c4}
+.latest a{display:block;text-decoration:none;color:var(--navy);padding:15px 4px;font-size:16px;line-height:1.7}
+.latest a:hover{color:var(--gold)}
+.latest .d{display:block;color:var(--gold);font-size:12px;letter-spacing:.12em;margin-bottom:4px}
 footer{background:var(--navy);color:#cdd3df;text-align:center;padding:40px 22px;font-size:13px}
 footer a{color:var(--gold)}
 </style>
@@ -91,6 +97,18 @@ footer a{color:var(--gold)}
   <p>── 弟子に教えるのと、同じことです。</p>
   <p>その考え方と、日々の実践は、noteに一つずつ書いています。</p>
   <p>具体的なやり方は、教材と、会員制の場で渡しています。</p>
+</section>
+
+<section>
+  <h2>最新の記事</h2>
+  <!-- POCKET-LATEST:START — この区画は scripts\agent-tasks\yomareru-site-latest-sync.ps1 が note 実機から自動更新する。手で編集しない。 -->
+  <ul class="latest">
+    <li><a href="https://note.com/yomareru_sekkei/n/n1664bf175ed9"><span class="d">2026-06-25</span>全部、開きました。──それでも偽物が選ばれない、たった一つの理由。</a></li>
+    <li><a href="https://note.com/yomareru_sekkei/n/ne3983f06b938"><span class="d">2026-06-21</span>全部、開きます。──AIに「選ばれる」ための全手順と、偽っても続かない理由。</a></li>
+    <li><a href="https://note.com/yomareru_sekkei/n/n1aedda0f18f7"><span class="d">2026-06-20</span>AIに 自分を「入れる」んじゃない。「出す」んだ。</a></li>
+  </ul>
+  <!-- POCKET-LATEST:END -->
+  <p class="note"><a href="https://note.com/yomareru_sekkei" style="color:var(--navy)">→ すべての記事を note で読む</a></p>
 </section>
 
 <section>
