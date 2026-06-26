@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>【ステージング】読まれる設計 ご相談チャット ── 動作確認用</title>
+<style>
+:root{--navy:#1A2B4A;--gold:#C1A23C;--ivory:#F2EBDD;--ink:#222}
+body{margin:0;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;color:var(--ink);
+  background:var(--ivory);line-height:2.0;font-size:17px}
+.wrap{max-width:760px;margin:0 auto;padding:48px 22px}
+h1{font-size:24px;color:var(--navy);font-weight:normal;border-left:4px solid var(--gold);padding-left:14px}
+.box{background:#fff;border:1px solid #e2d9c4;border-radius:8px;padding:20px 24px;margin:22px 0;font-size:15px;line-height:1.9}
+code{background:#f3eee0;padding:2px 6px;border-radius:4px;font-size:14px}
+.note{font-size:14px;color:#6a6a6a}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>読まれる設計 ご相談チャット（ステージング）</h1>
+
+  <div class="box">
+    <p>このページは <b>動作確認用</b>です。本番ページ(<code>index.html</code>)には まだ繋いでいません。</p>
+    <p>右下のボタンから チャットが開きます。バックエンドが起動していれば、永盛 斉の考え方を宿した一次受けの相談役が応答します。</p>
+  </div>
+
+  <div class="box">
+    <p><b>バックエンドの起動(ローカル):</b></p>
+    <p><code>pwsh -File scripts\agent-tasks\yomareru-consultant-chat.ps1 -Serve</code></p>
+    <p class="note">→ <code>http://localhost:8785/chat</code> で待受。このHTMLを ブラウザで開いて 右下のボタンを押す。</p>
+    <p class="note">公開時は <code>assets\consultant-chat.js</code> の <code>ENDPOINT</code> を Cloudflare Tunnel の https URL に差し替え、<code>index.html</code> に scriptタグを1行入れる(<code>agents\yomareru-consultant\DEPLOY-NOTES.md</code> 参照・総帥GO後)。</p>
+  </div>
+
+  <div class="box">
+    <p><b>確定6(この窓でも守る線):</b></p>
+    <p>見積金額・ご契約・集金・最後のGO・本物の最終判定 ── これらは AIからは 出しません。「最後は 永盛が 直接お話しします」と お伝えして 止まります。</p>
+  </div>
+</div>
+
+<!-- チャット窓(右下フロート) -->
+<script src="assets/consultant-chat.js"></script>
+</body>
+</html>
